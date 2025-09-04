@@ -1,0 +1,237 @@
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Dark background */
+}
+
+.instagram-gradient {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.instagram-gradient-text {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.section-card {
+    background-color: rgba(31, 41, 55, 0.8); /* Semi-transparent dark card */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* FAQ Accordion styles */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+.accordion-header svg {
+    transition: transform 0.3s ease-out;
+}
+
+/* Custom aspect ratio for video player */
+.aspect-w-16 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.aspect-h-9 > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Input focus styles */
+input:focus {
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.4);
+}
+
+.social-icon img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.whatsapp-ico{
+    fill: white;
+    width: 55px;
+    height: 55px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    position: fixed;
+    bottom: 20px;
+    right : 20px;
+    z-index: 10;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+    animation: pulse 1.5s infinite;
+}
+
+.hero-title-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 250%;
+    max-width: 800px; /* Adjust as needed */
+    z-index: -1;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(131, 58, 180, 0.4) 40px),
+        repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(131, 58, 180, 0.4) 40px);
+    mask-image: radial-gradient(ellipse at center, black 60%, transparent 70%);
+    border-radius: 50%;
+}
+
+/* Menu Button */
+#menu-btn {
+  /* 
+  Start Tweakable Presets
+  */
+  --animation-duration: 0.6s;
+  --animation-timing-function: ease-in-out;
+  --bar-color: white;
+  --btn-size: 30px; 
+  /*
+  End Tweakable Presets 
+  */
+  --bar-spacing: calc(var(--btn-size) * 0.2);
+  background: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--bar-spacing);
+  height: var(--btn-size);
+  justify-content: center;
+  padding: 0;
+  transition:
+    calc(var(--animation-duration) / 2) 
+    transform 
+    var(--animation-timing-function);
+  width: var(--btn-size);
+  z-index: 20; /* Ensure it's above the menu */
+}
+
+/* bars */
+#menu-btn span {
+  --bar-height: calc(var(--btn-size) * 0.1);
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background: var(--bar-color);
+  border-radius: var(--bar-height);
+  height: var(--bar-height);
+  width: 100%;
+}
+
+/* to x animation */
+#menu-btn[data-state="x"] { transform: rotate(-90deg);  }
+#menu-btn[data-state="x"] span:nth-child(1) { animation-name: to-x-top; }
+#menu-btn[data-state="x"] span:nth-child(2) { animation-name: to-x-mid; }
+#menu-btn[data-state="x"] span:nth-child(3) { animation-name: to-x-btm; }
+@keyframes to-x-top {
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(0); }
+  100% { transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(-45deg); }
+}
+@keyframes to-x-mid {
+  50% { transform: rotate(0); }
+  100% { transform: rotate(-45deg); }
+}
+@keyframes to-x-btm {
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(0); }
+  100% { transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(-135deg); }
+}
+
+
+/* to hamburger animation */
+#menu-btn[data-state="hamburger"] span:nth-child(1) { animation-name: to-hamburger-top; }
+#menu-btn[data-state="hamburger"] span:nth-child(2) { animation-name: to-hamburger-mid; }
+#menu-btn[data-state="hamburger"] span:nth-child(3) { animation-name: to-hamburger-btm; }
+@keyframes to-hamburger-top {
+  0% { transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(-45deg); }
+  50% { transform: translateY(calc(var(--bar-height) + var(--bar-spacing))) rotate(0); }
+  100% { transform: translateY(0) rotate(0); }
+}
+@keyframes to-hamburger-mid {
+  0% { transform: rotate(-45deg); }
+  50% { transform: rotate(0); }
+}
+@keyframes to-hamburger-btm {
+  0% { transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(-135deg); }
+  50% { transform: translateY(calc(-1 * (var(--bar-height) + var(--bar-spacing)))) rotate(0); }
+  100% { transform: translateY(0) rotate(0); }
+}
+
+.menu-closed {
+    display: none;
+}
+
+.menu-open {
+    display: block;
+}
+
+/* From Uiverse.io by zanina-yassine - adapted for Ecomath buttons */
+a.animated-button {
+  position: relative;
+  color: rgb(255, 255, 255, 0.66);
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+a.animated-button::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.2;
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+a.animated-button:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1) translateY(-3px);
+}
+
+a.animated-button:hover::before {
+  opacity: 1;
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Economia Matemática II - Alcance a Aprovação</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for UI icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-200">
+
+    <!-- Header -->
+    <header class="p-4 fixed w-full top-0 z-50 bg-gray-900/50 backdrop-blur-lg border-b border-gray-700/50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold instagram-gradient-text">EcoMath II</h1>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center">
+                <a href="#ementa" class="mx-2 hover:text-purple-400 transition-colors">Ementa</a>
+                <a href="#materiais" class="mx-2 hover:text-purple-400 transition-colors">Materiais</a>
+                <a href="#monitor" class="mx-2 hover:text-purple-400 transition-colors">Monitor</a>
+                <a href="#garantia" class="mx-2 hover:text-purple-400 transition-colors">Garantia</a>
+                <a href="#preco" class="mx-2 hover:text-purple-400 transition-colors">Preço</a>
+                <a href="#faq" class="mx-2 hover:text-purple-400 transition-colors">FAQ</a>
+                <a href="#cadastro" class="ml-4 px-4 py-2 rounded-lg text-white font-semibold instagram-gradient hover:opacity-90 transition-opacity animated-button">Garantir Vaga</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-gray-800/90 backdrop-blur-lg mt-4 menu-closed">
+            <a href="#ementa" class="block py-2 px-4 text-sm hover:bg-gray-700">Ementa</a>
+            <a href="#materiais" class="block py-2 px-4 text-sm hover:bg-gray-700">Materiais</a>
+            <a href="#monitor" class="block py-2 px-4 text-sm hover:bg-gray-700">Monitor</a>
+            <a href="#garantia" class="block py-2 px-4 text-sm hover:bg-gray-700">Garantia</a>
+            <a href="#preco" class="block py-2 px-4 text-sm hover:bg-gray-700">Preço</a>
+            <a href="#faq" class="block py-2 px-4 text-sm hover:bg-gray-700">FAQ</a>
+            <a href="#cadastro" class="block py-2 px-4 text-sm hover:bg-gray-700">Garantir Vaga</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section class="text-center py-20 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 relative hero-title-container">
+                    Monitorias particulares de <span class="instagram-gradient-text">Economia Matemática II</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    Monitorias em grupo, focadas no conteúdo prático, com material de apoio completo e suporte contínuo do inicio ao fim do semestre.
+                </p>
+                
+                <a href="#cadastro" class="inline-block px-8 py-4 rounded-lg text-white text-lg font-bold instagram-gradient hover:opacity-90 transition-opacity animated-button shadow-lg">
+    Quero Reservar Minha Vaga
+</a>
+            </div>
+        </section>
+
+        <!-- Syllabus Section -->
+        <section id="ementa" class="py-20 px-4">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Conteúdo do Curso</h2>
+                    <p class="text-gray-400">Tudo o que será ensinado, sem enrolação (Sujeito a adaptações caso necessário).</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+                    <!-- Unit 1 -->
+                    <div class="section-card p-6 rounded-xl">
+                        <h3 class="font-bold text-xl mb-3 text-purple-300">Unidade I</h3>
+                        <p class="font-semibold mb-4">Funções de várias variáveis e suas aplicações em Economia</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Derivadas parciais e direcionais</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Regra da cadeia e gradiente</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Derivadas de funções implícitas</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Funções Homogêneas e Fórmula de Euler</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Derivada da função Exponencial</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Derivada da função Logarítmica</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Otimização não condicionada</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Otimização condicionada</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Multiplicador de Lagrange</span></li>
+                        </ul>
+                    </div>
+                    <!-- Unit 2 -->
+                    <div class="section-card p-6 rounded-xl">
+                        <h3 class="font-bold text-xl mb-3 text-red-300">Unidade II</h3>
+                        <p class="font-semibold mb-4">Integral e suas aplicações em economia</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Integrais indefinidas</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Integrais definidas</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Integrais múltiplas</span></li>
+                        </ul>
+                    </div>
+                    <!-- Unit 3 -->
+                    <div class="section-card p-6 rounded-xl">
+                         <h3 class="font-bold text-xl mb-3 text-yellow-300">Unidade III</h3>
+                        <p class="font-semibold mb-4">Tempo contínuo – Modelagem com equações diferenciais</p>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Equações diferenciais de 1a ordem – Equações separáveis</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Fatores integrantes</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Equações Diferenciais Lineares</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Equações Diferenciais Exatas</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Equações Diferenciais de segunda ordem</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Homogêneas e não homogêneas</span></li>
+                            <li class="flex items-start"><i data-feather="check-circle" class="w-5 h-5 mr-2 text-green-400 flex-shrink-0 mt-1"></i><span>Equações Diferenciais de ordem n</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="materiais" class="py-20 px-4 bg-gray-900">
+    <div class="container mx-auto text-center">
+        <div class="max-w-3xl mx-auto">
+            <i data-feather="file-text" class="w-16 h-16 instagram-gradient-text mx-auto mb-4"></i>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Notas de Aula Detalhadas</h2>
+            <p class="text-gray-400 mb-8">
+                Você recebe material em PDF com toda a teoria, exemplos resolvidos passo a passo. Um guia completo para seus estudos.
+            </p>
+            
+            <a href="https://drive.google.com/uc?export=download&id=1r-drwgJPCSMYXVPB6lAbbd0K0lYA6wjw"
+               download="nota de aula 00.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-block px-8 py-4 rounded-lg text-white font-bold bg-purple-600 hover:bg-purple-700 transition-colors shadow-lg animated-button">
+                
+                <i data-feather="download" class="inline-block w-5 h-5 mr-2"></i>
+                Baixar Prévia do Material
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!-- Monitorias Individuais Section -->
+        <section id="monitorias-individuais" class="py-20 px-4">
+            <div class="container mx-auto max-w-3xl text-center">
+                <i data-feather="user-check" class="w-16 h-16 instagram-gradient-text mx-auto mb-4"></i>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Tira-Dúvidas Individual Incluso</h2>
+                <p class="text-gray-400 mb-8">
+                    Todos os alunos matriculados têm direito a <strong>DUAS HORAS POR MÊS</strong> para um tira-dúvidas individual, além das aulas em grupo. As sessões devem ser agendadas previamente e não são cumulativas para o mês seguinte.
+                </p>
+                <div class="flex flex-col md:flex-row gap-8 justify-center">
+                    <div class="section-card p-6 rounded-xl flex-1">
+                        <h3 class="font-bold text-xl mb-3 text-purple-300">Opção 1</h3>
+                        <p class="text-gray-300">Uma sessão de 2 horas de duração.</p>
+                    </div>
+                    <div class="section-card p-6 rounded-xl flex-1">
+                        <h3 class="font-bold text-xl mb-3 text-red-300">Opção 2</h3>
+                        <p class="text-gray-300">Duas sessões de 1 hora de duração cada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Monitor Section -->
+        <section id="monitor" class="py-20 px-4">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Conheça seu Monitor</h2>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 items-center section-card p-8 rounded-xl">
+                    <div class="md:col-span-1 flex flex-col items-center">
+                        <div class="w-48 h-48 rounded-full shadow-lg overflow-hidden">
+                            <img src="img_monitor/wesley.png" alt="Foto do Monitor Wesley Cipriano" class="w-full h-full object-cover">
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="https://www.instagram.com/ciprianowcf?igsh=ZnBqM2NtbmNjeWFo&utm_source=qr" class="social-icon">
+                                <img src="img_logos/instagram.svg" alt="Instagram" class="w-8 h-8">
+                            </a>
+                            <a href="https://www.linkedin.com/in/wesley-cipriano-664585204/" class="social-icon">
+                                <img src="img_logos/linkedin.svg" alt="LinkedIn" class="w-8 h-8">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-bold text-white mb-4 text-center md:text-left">Wesley Cipriano</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start"><i data-feather="book-open" class="w-5 h-5 mr-3 text-green-400 flex-shrink-0 mt-1"></i><span>Estudante do Sexto Semestre  de Economia na UFC.</span></li>
+                            <li class="flex items-start"><i data-feather="award" class="w-5 h-5 mr-3 text-green-400 flex-shrink-0 mt-1"></i><span>Atual Monitor da disciplina de Economia Matemática 1 do Professor Glauber Marques Nojosa.</span></li>
+                            <li class="flex items-start"><i data-feather="briefcase" class="w-5 h-5 mr-3 text-green-400 flex-shrink-0 mt-1"></i><span>Diretor Acadêmico do Grupo de Estudo e Pesquisa em Economia Internacional (GEPEI-UFC).</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Garantia Section -->
+        <section id="garantia" class="py-20 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-3xl text-center">
+                <i data-feather="shield" class="w-16 h-16 instagram-gradient-text mx-auto mb-4"></i>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossa Garantia</h2>
+                <p class="text-gray-400 mb-8">
+                    Após efetuado o pagamento o estudante tem 7 dias para solicitar o reembolso, caso os 7 dias passem antes dele ter assistido a primeira aula a garantia se extente até o primeiro dia util após as duas primeira aulas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="preco" class="py-20 px-4">
+            <div class="container mx-auto">
+                <div class="max-w-md mx-auto section-card rounded-2xl p-8 text-center shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-2">Investimento Acessível</h3>
+                    <p class="text-gray-400 mb-6">Reforço no aprendizado por um preço justo.</p>
+                    <div class="mb-6">
+                        <span class="text-5xl font-extrabold">R$150</span>
+                        <span class="text-xl text-gray-400">/mês</span>
+                    </div>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center"><i data-feather="clock" class="w-5 h-5 mr-3 text-purple-400"></i><span>Aulas Sábados e Domingos pela manhã</span></li>
+                        <li class="flex items-center"><i data-feather="users" class="w-5 h-5 mr-3 text-purple-400"></i><span>Grupos de no máximo 6 pessoas</span></li>
+                        <li class="flex items-center"><i data-feather="video" class="w-5 h-5 mr-3 text-purple-400"></i><span>Aulas gravadas para rever quando quiser</span></li>
+                        <li class="flex items-center"><i data-feather="message-circle" class="w-5 h-5 mr-3 text-purple-400"></i><span>Suporte via WhatsApp</span></li>
+                    </ul>
+                    <div class="bg-green-900/50 border border-green-500/50 text-green-300 rounded-lg p-4 mb-8">
+                        <p class="font-bold">Menos de R$15,00 por hora/aula!</p>
+                        <p class="text-sm">Um investimento muito baixo por um material de qualidade e acompanhamento contínuo.</p>
+                    </div>
+                    <a href="#cadastro" class="w-full block px-8 py-4 rounded-lg text-white text-lg font-bold instagram-gradient hover:opacity-90 transition-opacity animated-button">
+                        Reservar Vaga Agora
+                    </a>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4 text-white">Formas de Pagamento</h4>
+                        <p class="text-gray-400 mb-4">Aceitamos Débito, Crédito, Boleto e PIX.</p>
+                        <div class="flex justify-center items-center space-x-2 sm:space-x-4">
+                            <img src="img_logos/visa.svg" alt="Visa" class="h-6 sm:h-8 rounded">
+                            <img src="img_logos/mastercard.svg" alt="Mastercard" class="h-6 sm:h-8 rounded">
+                            <img src="img_logos/elo.svg" alt="Elo" class="h-6 sm:h-8 rounded">
+                            <img src="img_logos/boleto.svg" alt="Boleto" class="h-6 sm:h-8 rounded">
+                            <img src="img_logos/pix.svg" alt="PIX" class="h-6 sm:h-8 rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-registration Section -->
+        <section id="cadastro" class="py-20 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-2xl text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Faça seu Cadastro Prévio</h2>
+                 <p class="text-gray-400 mb-8">
+                    Garanta sua vaga sem compromisso! O cadastro é apenas uma reserva. Entraremos em contato para confirmar seu interesse antes do início das aulas. Nenhum pagamento é necessário agora.
+                </p>
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8RuTXjOYe8q4C8RTLQIRIDtG1ZPt3_lvh9d_Ikb4TGi1_Sg/viewform?embedded=true" width="360" height="650" frameborder="0" marginheight="0" marginwidth="0" class="w-full max-w-full">Carregando…</iframe>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 px-4">
+            <div class="container mx-auto max-w-3xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Perguntas Frequentes</h2>
+                    <p class="text-gray-400">Tire todas as suas dúvidas aqui.</p>
+                </div>
+                <div class="space-y-4" id="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>Posso cancelar quando quiser?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">Sim, você pode cancelar a qualquer momento, sem taxas ou multas. A cobrança é mensal e você pode interrompê-la para o próximo mês.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>E se eu não gostar do curso?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">Oferecemos uma garantia de satisfação de 7 dias. Se por qualquer motivo você não se adaptar, devolvemos 100% do seu investimento.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>As aulas ficam gravadas?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">Sim! Todas as aulas são gravadas e disponibilizadas para os alunos, para que você possa revisar o conteúdo sempre que precisar ou assistir caso perca alguma aula.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>Tem aulas para tirar dúvidas?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">Sim, além do espaço para dúvidas durante as aulas, temos sessões extras focadas em resolver listas de exercícios e tirar dúvidas antes das provas.</p>
+                        </div>
+                    </div>
+                     <!-- FAQ Item 5 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>Posso mandar dúvidas no WhatsApp?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">Com certeza! Você terá acesso direto ao meu WhatsApp para tirar dúvidas pontuais que surgirem durante seus estudos. Geralmente, respondo a todas as mensagens à noite.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 6 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>Qual o tempo de duração das aulas?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">1h e 30 minutos, podendo exceder esse tempo se necessário.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 7 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>As aulas são individuais?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">Não, em grupo de no máximo 6 pessoas para que eu consiga dar um acompanhamento a todos.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 8 -->
+                    <div class="section-card rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left font-semibold">
+                            <span>Terei que pagar algo mais pelas notas de aula em PDF?</span>
+                            <i data-feather="chevron-down" class="w-5 h-5 transition-transform"></i>
+                        </button>
+                        <div class="accordion-content text-gray-400">
+                            <p class="px-5 pb-5">Não, elas já são inclusas e podem ser impressas em folha A4.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700/50 py-8 text-center">
+        <div class="container mx-auto">
+            <p class="text-gray-400">&copy; 2025 Aulas de Economia Matemática II. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-500 mt-2">Desenvolvido para ajudar você a alcançar a aprovação.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS File -->
+    <script src="script.js"></script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5585985978515?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20as%20aulas%20particulares."><svg viewBox="0 0 32 32" class="whatsapp-ico"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a>
+</body>
+</html>
